@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    /* 基础选项 */
+    "target": "ES2022",                          /* 目标 ECMAScript 版本 */
+    "module": "ES2022",                          /* 模块系统 */
+    "lib": ["ES2022", "DOM"],                    /* 包含的库文件 */
+    "moduleResolution": "node",                  /* 模块解析策略 */
+    
+    /* 严格类型检查 */
+    "strict": true,                              /* 启用所有严格类型检查选项 */
+    "noImplicitAny": true,                       /* 不允许隐式 any */
+    "strictNullChecks": true,                    /* 严格的空值检查 */
+    "strictFunctionTypes": true,                 /* 严格的函数类型检查 */
+    "strictBindCallApply": true,                 /* 严格的 bind/call/apply */
+    "strictPropertyInitialization": true,        /* 严格的属性初始化 */
+    "noImplicitThis": true,                      /* 不允许隐式 this */
+    "alwaysStrict": true,                        /* 始终以严格模式解析 */
+    
+    /* 额外检查 */
+    "noUnusedLocals": false,                     /* 不报告未使用的局部变量 */
+    "noUnusedParameters": false,                 /* 不报告未使用的参数 */
+    "noImplicitReturns": true,                   /* 报告函数缺少返回值 */
+    "noFallthroughCasesInSwitch": true,          /* 报告 switch 语句的 fallthrough */
+    
+    /* 模块解析 */
+    "esModuleInterop": true,                     /* 启用 ES 模块互操作 */
+    "allowSyntheticDefaultImports": true,        /* 允许从没有默认导出的模块导入 */
+    "resolveJsonModule": true,                   /* 允许导入 JSON 文件 */
+    "isolatedModules": true,                     /* 将每个文件作为单独的模块 */
+    
+    /* 输出选项 */
+    "declaration": true,                         /* 生成声明文件 */
+    "declarationMap": true,                      /* 生成声明文件的 source map */
+    "sourceMap": true,                           /* 生成 source map */
+    "outDir": "./dist",                          /* 输出目录 */
+    "rootDir": "./",                             /* 根目录 */
+    "removeComments": false,                     /* 保留注释 */
+    
+    /* 其他选项 */
+    "skipLibCheck": true,                        /* 跳过库文件的类型检查 */
+    "forceConsistentCasingInFileNames": true,    /* 强制文件名大小写一致 */
+    "allowJs": true,                             /* 允许编译 JS 文件 */
+    "checkJs": false,                            /* 不检查 JS 文件 */
+    "incremental": true                          /* 增量编译 */
+  },
+  
+  /* 包含的文件 */
+  "include": [
+    "index.ts",
+    "src/**/*"
+  ],
+  
+  /* 排除的文件 */
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "examples",
+    "test",
+    "**/*.test.js",
+    "**/*.test.ts"
+  ]
+}
